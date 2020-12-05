@@ -38,7 +38,6 @@ Rectangle::Rectangle(Point2D _pos, int r, int g, int b, int a, int _width, int _
 void Rectangle::render(SDL_Renderer* rend)
 {
 	cout << "Rectangle: position: " << pos.toString() << " width: " << width << " height: " << height << endl;
-	cout << "Color: (" << col[0] << "," << to_string(col[1]) << "," << col[2] << "," << col[3] << ")" << endl;
 	//set color
 	SDL_SetRenderDrawColor(rend, col[0], col[1], col[2], col[3]);
 	//defines corners
