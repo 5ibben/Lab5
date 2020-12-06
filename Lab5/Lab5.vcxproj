@@ -151,7 +151,7 @@
   <ItemGroup>
     <ClCompile Include="Point2D.cpp" />
     <ClCompile Include="Shape.cpp" />
-    <ClCompile Include="testrun.cpp" />
+    <ClCompile Include="Lab5main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

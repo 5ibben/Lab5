@@ -8,7 +8,7 @@ using namespace std;
 class Shape
 {
 public:
-	Shape(Point2D _pos, int r=0, int g=0, int b=0, int a=255);//for assignment
+	Shape(Point2D _pos, int r=0, int g=0, int b=0, int a=255);
 
 	virtual void render(SDL_Renderer* rend) = 0;
 	void color(int r=0, int g=0, int b=0, int a=255);
@@ -20,6 +20,7 @@ protected:
 
 class Rectangle :public Shape
 {
+	//A rectangle in 2D space
 public:
 	Rectangle(Point2D _pos=Point2D(0,0), int r=0, int g=0, int b=0, int a=0, int _width=1, int _height=1);
 	void render(SDL_Renderer* rend);
@@ -29,6 +30,7 @@ private:
 
 class Triangle :public Shape
 {
+	//A triangle in 2D space
 public:
 	Triangle(Point2D _pos = Point2D(0, 0), int r = 0, int g = 0, int b = 0, int a = 0, int _width = 1, int _height = 1);
 	void render(SDL_Renderer* rend);
@@ -38,11 +40,12 @@ private:
 
 class Circle :public Shape
 {
+	//A circle in 2D space
 public:
-	Circle(Point2D _pos = Point2D(0, 0), int r = 0, int g = 0, int b = 0, int a = 0, float _radius = 1, int res =10);
+	Circle(Point2D _pos = Point2D(0, 0), int r = 0, int g = 0, int b = 0, int a = 0, int _radius = 1, int res =10);
 	void render(SDL_Renderer* rend);
 private:
-	float radius;
+	int radius;
 	int resolution;
 };
 

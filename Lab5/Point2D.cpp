@@ -37,5 +37,5 @@ float Point2D::distance(Point2D other)
 
 std::string Point2D::toString()
 {// returns in format "[x, y]"
-	return  "[" + std::to_string(x) + ", " + std::to_string(y) + "]";
+	return  "[" + std::to_string(int(x)) + ", " + std::to_string(int(y)) + "]";
 }
